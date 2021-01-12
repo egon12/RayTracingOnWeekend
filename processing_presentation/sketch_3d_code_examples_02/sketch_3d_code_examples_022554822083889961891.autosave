@@ -1,0 +1,29 @@
+
+void setup() {
+  size(640, 480);
+}
+
+
+
+void draw(){
+  // s for square
+  PVector s[] = {
+    new PVector(10, 10, 0),
+    new PVector(100, 0, 0),
+    new PVector(100, 100, 0),
+    new PVector(0, 200, 0),
+  };
+  
+  fill(255, 200, 255);
+  beginShape();
+  vertex(s[0].x, s[0].y);
+  vertex(s[0].x, s[0].y);
+  vertex(s[0].x, s[0].y);
+  vertex(s[0].x, s[0].y);
+  /*
+  for (PVector v: s) {
+   vertex(v.x, v.y); 
+  }
+  */
+  endShape(CLOSE);
+}
